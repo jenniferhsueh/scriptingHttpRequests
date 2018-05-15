@@ -18,6 +18,7 @@ function getAndPrintHTML (options) {
     });
   });
 }
+//passing below object in as a variable
 var requestOptions = {
   host: 'sytantris.github.io',
   path: '/http-examples/step3.html'
