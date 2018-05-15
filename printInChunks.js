@@ -13,7 +13,7 @@ function getAndPrintHTMLChunks () {
   https.get(requestOptions, function (response) {
     var body = "";
     // set encoding of received data to UTF-8
-    response.setEncoding('utf8');
+  response.setEncoding('utf8');
 
     // the callback is invoked when a `data` chunk is received
     response.on('data', function (chunk) {
