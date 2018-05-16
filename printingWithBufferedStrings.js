@@ -13,11 +13,11 @@ function getAndPrintHTML () {
 
   response.on('data', function (chunk) {
     body += chunk
-    console.log(body);
     console.log('Chunk Received. Length:', chunk.length);
   });
 
   response.on('end', function() {
+    console.log(body);
     console.log('Response stream complete.');
   });
 });

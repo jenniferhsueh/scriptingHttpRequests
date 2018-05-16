@@ -11,14 +11,14 @@ function getAndPrintHTMLChunks () {
   // notice that https.get takes a callback with one parameter -
   // response, which is a Stream that represents the HTTP response
   https.get(requestOptions, function (response) {
-    var body = "";
+    // var body = "";
     // set encoding of received data to UTF-8
   response.setEncoding('utf8');
 
     // the callback is invoked when a `data` chunk is received
     response.on('data', function (chunk) {
-      body += chunk
-      console.log(body);
+      // body += chunk
+      console.log(chunk);
       console.log('Chunk Received. Length:', chunk.length);
       
     });
