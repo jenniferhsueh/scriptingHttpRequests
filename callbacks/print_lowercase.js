@@ -7,20 +7,14 @@ var requestOptions = {
   path: '/http-examples/step5.html'
 };
 
-function printHTML(html) {
-    console.log(getHTML.html.LowerCase());
+function printToLowerCase(html) {
+    console.log(html.toLowerCase());
   }
-// console.log(getHTML(requestOptions, printHTML));
-//   //callbacks #6
-// function printToLowercase(html) {
-//   console.log(html.toLowerCase());
-// }
-// httpFunctions.getHTML(requestOptions, printToLowercase);
+// console.log(getHTML(requestOptions, printToUpperCase)); -same as above CL
 
-var upperCase = getHTML(requestOptions, function(word) {
-  return getHTML.toUpperCase();
-});
-console.log(upperCase);
+httpFunctions.getHTML(requestOptions, printToLowerCase);
+//object to key        /params       //callback function
+
 // console.log(getHTML(requestOptions, printHTML));
 //console.log(getHttp.requestOptions.host);
 //name it as a variables so you can access the functions inside them
